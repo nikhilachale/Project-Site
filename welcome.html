@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wecome Page</title>
-    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./css/login.css" />
     <link
     href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
     rel="stylesheet"
@@ -26,14 +26,33 @@
         <button class="btn btn-danger" onclick="logout()">Logout</button>
     </div></center>
     <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.4/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.4/firebase-analytics.js";
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyCxFXL5zGD8OkHs83rc6RPhUY4XbvOxCls",
+          authDomain: "educational-site-65e32.firebaseapp.com",
+          projectId: "educational-site-65e32",
+          storageBucket: "educational-site-65e32.appspot.com",
+          messagingSenderId: "227655214336",
+          appId: "1:227655214336:web:af4f912821752c32587fe5",
+          measurementId: "G-1KHHLWPDKF"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+    <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-app.js"></script>
 
     <!-- TODO: Add SDKs for Firebase products that you want to use
         https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
-
-    <script src="firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-auth.js"></script>
     <script src="welcome.js"></script>
 </body>
 </html>
