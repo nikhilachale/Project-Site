@@ -9887,6 +9887,7 @@ h6,
   align-items: center;
   justify-content: center;
   background: rgba(68, 66, 90, 0.8);
+
   transition: .5s;
   z-index: 1;
   opacity: 0;
@@ -9959,4 +9960,18 @@ h6,
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+.btn td {
+  padding: 20px;
+}
+
+.btn button{
+  height: 140px;
+  width: 224px; 
+  background-color: #FF6600;
+  color: white;
+  font-size: 25px;
+  border: 1px solid ;
+  border-radius: 50%;
 }
